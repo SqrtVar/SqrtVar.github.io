@@ -1,477 +1,556 @@
 <html>
+
 <head>
 
-<style>
-	a:link { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: beige; text-decoration: none}
-	a:visited {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: beige; text-decoration: none}
-	a:active { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: ghostwhite; text-decoration: none}
-	a:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; line-height: normal; font-weight: normal; color: gray; text-decoration: none}
-	body {
-		font-family: Verdana, Arial, Helvetica, sans-serif; 
-		scrollbar-face-color: #5D6355;
-		scrollbar-shadow-color: black;
-		scrollbar-highlight-color: black;
-		scrollbar-3dlight-color: black;
-		scrollbar-darkshadow-color: black;
-		scrollbar-track-color: #5D6355;
-		scrollbar-arrow-color: black;
-	}
-</style>
+  <style>
+    a:link {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      line-height: normal;
+      font-weight: normal;
+      color: beige;
+      text-decoration: none
+    }
 
-<script language="JavaScript1.2">
+    a:visited {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      line-height: normal;
+      font-weight: normal;
+      color: beige;
+      text-decoration: none
+    }
 
-function disableselect(e){
-return false
-}
+    a:active {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      line-height: normal;
+      font-weight: normal;
+      color: ghostwhite;
+      text-decoration: none
+    }
 
-function reEnable(){
-return true
-}
+    a:hover {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      line-height: normal;
+      font-weight: normal;
+      color: gray;
+      text-decoration: none
+    }
 
-//if IE4+
-document.onselectstart=new Function ("return false")
+    body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      scrollbar-face-color: #5D6355;
+      scrollbar-shadow-color: black;
+      scrollbar-highlight-color: black;
+      scrollbar-3dlight-color: black;
+      scrollbar-darkshadow-color: black;
+      scrollbar-track-color: #5D6355;
+      scrollbar-arrow-color: black;
+    }
+  </style>
 
-//if NS6
-if (window.sidebar){
-document.onmousedown=disableselect
-document.onclick=reEnable
-}
-</script>
+  <script language="JavaScript1.2">
 
-<script language=JavaScript>
-<!--
+    function disableselect(e) {
+      return false
+    }
+
+    function reEnable() {
+      return true
+    }
+
+    //if IE4+
+    document.onselectstart = new Function("return false")
+
+    //if NS6
+    if (window.sidebar) {
+      document.onmousedown = disableselect
+      document.onclick = reEnable
+    }
+  </script>
+
+  <script language=JavaScript>
+< !--
 
 //Disable right click script.
 
-var message="";
-///////////////////////////////////
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if 
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+var message = "";
+    ///////////////////////////////////
+    function clickIE() { if (document.all) { (message); return false; } }
+    function clickNS(e) {
+      if
+        (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) { (message); return false; }
+      }
+    }
+    if (document.layers) { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+    else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
 
-document.oncontextmenu=new Function("return false")
-// --> 
-</script>
-<title>SqrtVar</title>
+    document.oncontextmenu = new Function("return false")
+// -->
+  </script>
+  <title>SqrtVar</title>
 
-<META NAME="Title" CONTENT="SqrtVar">
-<META NAME="Author" CONTENT="Jin C.">
-<META NAME="Subject" CONTENT="Web Page">
-<META NAME="Description" CONTENT="fintech related">
-<META NAME="Keywords" CONTENT="risk management">
-<META NAME="Language" CONTENT="English">
+  <META NAME="Title" CONTENT="SqrtVar">
+  <META NAME="Author" CONTENT="Jin C.">
+  <META NAME="Subject" CONTENT="Web Page">
+  <META NAME="Description" CONTENT="fintech related">
+  <META NAME="Keywords" CONTENT="risk management">
+  <META NAME="Language" CONTENT="English">
 
-<LINK title="global css" href="cs.css" type="text/css" rel="stylesheet">
+  <LINK title="global css" href="cs.css" type="text/css" rel="stylesheet">
 </head>
 
 
 <body bgcolor="#b0b0b0">
-<br>
-<center>
-<table  bgcolor="#9b9b9b" align="center" width="1000" cellspacing="0" cellpadding="0" border="8" BORDERCOLOR=#9b9b9b> 
-		<tbody>
-		<tr>
-		<td>
-				<Left><img src="logo.PNG" alt="SqrtVar" height="125" width="125"></Left>
-		</td>
-		</tr>
-		</tbody>
-		</table>
-</center>
+  <br>
+  <center>
+    <table bgcolor="#9b9b9b" align="center" width="1000" cellspacing="0" cellpadding="0" border="8" BORDERCOLOR=#9b9b9b>
+      <tbody>
+        <tr>
+          <td>
+            <Left><img src="logo.PNG" alt="SqrtVar" height="125" width="125"></Left>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </center>
 
-<div>&nbsp;</div>
+  <div>&nbsp;</div>
 
-<center>
-<table width="1000" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td height="45" width="80%" style="background-color:#9b9b9b;">	
+  <center>
+    <table width="1000" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="45" width="80%" style="background-color:#9b9b9b;">
 
-<table align="center" width="800" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td valign=top>
+          <table align="center" width="800" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td valign=top>
 
-<div>&nbsp;</div>
+                <div>&nbsp;</div>
 
-	<!-- start 1st column -->
-	<!-- start left table code -->
-<table bgcolor="#000000" width="140" cellspacing="0" cellpadding="0" border="0">
+                <!-- start 1st column -->
+                <!-- start left table code -->
+                <table bgcolor="#000000" width="140" cellspacing="0" cellpadding="0" border="0">
 
-<td><table width="100%" cellspacing="1" cellpadding="0" border="0">
-  
-<tr>
-  
-<td bgcolor="#CCCCCC"> <font face=arial size=2 color="D77D00"><b><center>Main Menu</center></b></font></td>
-</tr>
-<tr>
+                  <td>
+                    <table width="100%" cellspacing="1" cellpadding="0" border="0">
 
-<td>
-	<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-		<div class="tradingview-widget-container__widget"></div>
-		<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AMEX-SPY/" rel="noopener" target="_blank"><span class="blue-text">SPY Quotes</span></a> by TradingView</div>
-		<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-		{
-		"symbol": "AMEX:SPY",
-		"width": "200",
-		"height": "200",
-		"locale": "en",
-		"dateRange": "1d",
-		"colorTheme": "dark",
-		"trendLineColor": "#37a6ef",
-		"underLineColor": "rgba(55, 166, 239, 0.15)",
-		"isTransparent": false,
-		"autosize": false,
-		"largeChartUrl": ""
-	}
-		</script>
-	</div>
-	<!-- TradingView Widget END -->
-</td>
-</tr>
+                      <tr>
+
+                        <td bgcolor="#CCCCCC">
+                          <font face=arial size=2 color="D77D00"><b>
+                              <center>Main Menu</center>
+                            </b></font>
+                        </td>
+                      </tr>
+                      <tr>
+
+                        <td>
+                          <!-- TradingView Widget BEGIN -->
+                          <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <div class="tradingview-widget-copyright"><a
+                                href="https://www.tradingview.com/symbols/AMEX-SPY/" rel="noopener"
+                                target="_blank"><span class="blue-text">SPY Quotes</span></a> by TradingView</div>
+                            <script type="text/javascript"
+                              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                              async>
+                                {
+                                  "symbol": "AMEX:SPY",
+                                    "width": "200",
+                                      "height": "200",
+                                        "locale": "en",
+                                          "dateRange": "1d",
+                                            "colorTheme": "dark",
+                                              "trendLineColor": "#37a6ef",
+                                                "underLineColor": "rgba(55, 166, 239, 0.15)",
+                                                  "isTransparent": false,
+                                                    "autosize": false,
+                                                      "largeChartUrl": ""
+                                }
+                              </script>
+                          </div>
+                          <!-- TradingView Widget END -->
+                        </td>
+                      </tr>
 
 
-<tr>
-<td bgcolor="#CCCCCC"> <font face=arial size=2 color="D77D00"><b><center>Catalysts</center></b></font></td>
-</tr>
+                      <tr>
+                        <td bgcolor="#CCCCCC">
+                          <font face=arial size=2 color="D77D00"><b>
+                              <center>Catalysts</center>
+                            </b></font>
+                        </td>
+                      </tr>
 
-<tr>
-<td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';" onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
-<script language="JavaScript" type="text/javascript">
-<!--
+                      <tr>
+                        <td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';"
+                          onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
+                          <script language="JavaScript" type="text/javascript">
+< !--
 
-function go(){
-if (document.selecter.select1.options[document.selecter.select1.selectedIndex].value != "none") {
-location = document.selecter.select1.options[document.selecter.select1.selectedIndex].value
-		}
-	}
+                              function go() {
+                                if (document.selecter.select1.options[document.selecter.select1.selectedIndex].value != "none") {
+                                  location = document.selecter.select1.options[document.selecter.select1.selectedIndex].value
+                                }
+                              }
 //-->
-</script>
+                          </script>
 
-<script language="JavaScript" type="text/javascript">
-<!-- 
-document.write('<form name="selecter"><select name="select1">');
-document.write('<option value=none>HTML Menu');
-document.write('<option value=none>--------------------');
-document.write('<option value="htmlintro.html">HTML Intro');
-document.write('<option value="htmlbasic.html">HTML Basic');
-	document.write('<option value="Demo.html">Demo');
-document.write('</select>');
-document.write('<input type="button" value="Go" onclick="go()">');
-document.write('</form>');
+                          <script language="JavaScript" type="text/javascript">
+                              < !--
+                              document.write('<form name="selecter"><select name="select1">');
+                            document.write('<option value=none>HTML Menu');
+                            document.write('<option value=none>--------------------');
+                            document.write('<option value="htmlintro.html">HTML Intro');
+                            document.write('<option value="htmlbasic.html">HTML Basic');
+                            document.write('<option value="Demo.html">Demo');
+                            document.write('</select>');
+                            document.write('<input type="button" value="Go" onclick="go()">');
+                            document.write('</form>');
 // end hiding contents -->
-</script>
-</td>
-</tr>
+                          </script>
+                        </td>
+                      </tr>
 
-</table>
-</td>
-</tr>
-</table>
-<!-- end left table code -->
-	
-	<!-- end 1st column -->
-</td>
-<td valign="top">
-	<!-- start news section -->
-<div class=news>
-<center><u><small><b>Monitors</u></small></b></center><BR>
-<table bgcolor="#9b9b9b" width="575" cellspacing="0" cellpadding="7" border="0">
-<tr>
-<td>
-	
-		<center><font size="2"><P>This web site is under construction.</p></font>
-</tdcenter>
-<br>
+                    </table>
+                  </td>
+            </tr>
+          </table>
+          <!-- end left table code -->
 
+          <!-- end 1st column -->
+        </td>
+        <td valign="top">
+          <!-- start news section -->
+          <div class=news>
+            <center><u><small><b>Monitors</u></small></b></center><BR>
+            <table bgcolor="#9b9b9b" width="575" cellspacing="0" cellpadding="7" border="0">
+              <tr>
+                <td>
 
-</td>
-</tr>
-</table>
-<!-- end news section -->
-</div>
-</td>
-<td valign=top>
-<div>&nbsp;</div>
-<!-- start 3rd column -->
-	<!-- start righttable code -->
-<table bgcolor="#000000" width="140" cellspacing="1" cellpadding="0" border="0">
-<tr>
-<td><table width="200" cellspacing="0" cellpadding="0" border="0">
-<tr>
-<td bgcolor="#CCCCCC"> <font face=arial size=2 color="D77D00"><b><center>Members Login</center></b></font></td>
-</tr>
-<tr>
-<td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';" onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
-
-<center>
-<script>
-//Encrypted Password script
-
-function submitentry(){
-password = document.password1.password2.value.toLowerCase()
-username = document.password1.username2.value.toLowerCase()
-passcode = 1
-usercode = 1
-for(i = 0; i < password.length; i++) {
-passcode *= password.charCodeAt(i);
-}
-for(x = 0; x < username.length; x++) {
-usercode *= username.charCodeAt(x);
-}
-//CHANGE THE NUMBERS BELOW TO REFLECT YOUR USERNAME/PASSWORD
-if(usercode==48489904524600&&passcode==1.3326737635318771e+27)
-//CHANGE THE NUMBERS ABOVE TO REFLECT YOUR USERNAME/PASSWORD
-{
-window.location=password+"jprivate.html"}
-else{
-alert("password/username combination wrong")}
-}
-</script>
-
-<form name="password1">
-&nbsp;<small>User's ID: </small>
-<input type="text" name="username2" size="15">
-<br>
-&nbsp;<small>Password: </small>
-<input type="password" name="password2" size="15"><BR>
-
-<input type="button" value="Login" onClick="submitentry()">
-</form>
-
-<div>&nbsp;</div>
-</td>
-</tr>
-</center>
-
-<tr>
-<td bgcolor="#CCCCCC"> <font face=arial size=2 color="D77D00"><b><center>Links</center></b></font></td>
-</tr>
-
-<tr>
-<td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';" onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
-
-<p style="width:140" align=center>
+                  <center>
+                    <font size="2">
+                      <P>This web site is under construction.</p>
+                    </font>
+                    </tdcenter>
+                    <br>
 
 
-<center>
-<p><a title="" href="https://finviz.com" target="_blank">finviz</a></p>
-<p><a title="" href="https://zerohedge.com" target="_blank">zerohedge</a></p>
-<p><a title="" href="https://www.quantopian.com" target="_blank">quantopian</a></p>  
-<p><a title="" href="https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html" target="_blank">cboe hike prop%</a></p>
-<p><a title="" href="http://www.visualcapitalist.com/" target="_blank">visual capitalist</a></p>
-<p><a title="" href="https://money.cnn.com/data/fear-and-greed/" target="_blank">cnn fear & greed</a></p>
-<p><a title="" href="https://twitter.com/" target="_blank">twitter</a></p>
-</center>
-<div>&nbsp;</div>
+                </td>
+              </tr>
+            </table>
+            <!-- end news section -->
+          </div>
+        </td>
+        <td valign=top>
+          <div>&nbsp;</div>
+          <!-- start 3rd column -->
+          <!-- start righttable code -->
+          <table bgcolor="#000000" width="140" cellspacing="1" cellpadding="0" border="0">
+            <tr>
+              <td>
+                <table width="200" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td bgcolor="#CCCCCC">
+                      <font face=arial size=2 color="D77D00"><b>
+                          <center>Members Login</center>
+                        </b></font>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';"
+                      onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
 
-</p>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
+                      <center>
+                        <script>
+                          //Encrypted Password script
 
-<!-- end right table code -->
-	
-	<!-- end 3rd column -->
-	</td>
-</tr>
-</table>
+                          function submitentry() {
+                            password = document.password1.password2.value.toLowerCase()
+                            username = document.password1.username2.value.toLowerCase()
+                            passcode = 1
+                            usercode = 1
+                            for (i = 0; i < password.length; i++) {
+                              passcode *= password.charCodeAt(i);
+                            }
+                            for (x = 0; x < username.length; x++) {
+                              usercode *= username.charCodeAt(x);
+                            }
+                            //CHANGE THE NUMBERS BELOW TO REFLECT YOUR USERNAME/PASSWORD
+                            if (usercode == 48489904524600 && passcode == 1.3326737635318771e+27)
+                            //CHANGE THE NUMBERS ABOVE TO REFLECT YOUR USERNAME/PASSWORD
+                            {
+                              window.location = password + "jprivate.html"
+                            }
+                            else {
+                              alert("password/username combination wrong")
+                            }
+                          }
+                        </script>
+
+                        <form name="password1">
+                          &nbsp;<small>User's ID: </small>
+                          <input type="text" name="username2" size="15">
+                          <br>
+                          &nbsp;<small>Password: </small>
+                          <input type="password" name="password2" size="15"><BR>
+
+                          <input type="button" value="Login" onClick="submitentry()">
+                        </form>
+
+                        <div>&nbsp;</div>
+                    </td>
+                  </tr>
+  </center>
+
+  <tr>
+    <td bgcolor="#CCCCCC">
+      <font face=arial size=2 color="D77D00"><b>
+          <center>Links</center>
+        </b></font>
+    </td>
+  </tr>
+
+  <tr>
+    <td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';"
+      onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
+
+      <p style="width:140" align=center>
 
 
-<p>
-</center>
+        <center>
+          <p><a title="" href="https://finviz.com" target="_blank">finviz</a></p>
+          <p><a title="" href="https://zerohedge.com" target="_blank">zerohedge</a></p>
+          <p><a title="" href="https://www.quantopian.com" target="_blank">quantopian</a></p>
+          <p><a title="" href="https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html"
+              target="_blank">cboe hike prop%</a></p>
+          <p><a title="" href="http://www.visualcapitalist.com/" target="_blank">visual capitalist</a></p>
+          <p><a title="" href="https://money.cnn.com/data/fear-and-greed/" target="_blank">cnn fear & greed</a></p>
+          <p><a title="" href="https://twitter.com/" target="_blank">twitter</a></p>
+        </center>
+      <div>&nbsp;</div>
+
+      </p>
+    </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+
+  <!-- end right table code -->
+
+  <!-- end 3rd column -->
+  </td>
+  </tr>
+  </table>
+
+
+  <p>
+    </center>
 
 </body>
 
 <!-- Start of Footer -->
 <style>
-    .footer {
-      <!–– position: fixed; -->
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #b0b0b0;
-        color: white;
-        text-align: center;
-    }
-    </style>
-    
-    <div class="footer">
-      <br>
-        <p>
-              <center>
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
-                  {
-                  "width": "1000",
-                  "height": "600",
-                  "locale": "en",
+  .footer {
+    < !–– position: fixed;
+    -->left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b0b0b0;
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<div class="footer">
+  <br>
+  <p>
+    <center>
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a
+            href="https://www.tradingview.com/markets/currencies/economic-calendar/" rel="noopener"
+            target="_blank"><span class="blue-text">Economic Calendar</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+          {
+            "width": "1000",
+              "height": "600",
+                "locale": "en",
                   "importanceFilter": "1",
-                  "currencyFilter": "USD,CNY,EUR,JPY"
-                  }
-                  </script>
-                  </div>
-                  <!-- TradingView Widget END -->
-             
-                  
-                  <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                  <div class="tradingview-widget-container__widget"></div>
-                  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-                  {
-                  "showChart": true,
-                  "locale": "en",
+                    "currencyFilter": "USD,CNY,EUR,JPY"
+          }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener"
+            target="_blank"><span class="blue-text">Market Data</span></a> by TradingView</div>
+        <script type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+              "showChart": true,
+                "locale": "en",
                   "largeChartUrl": "",
-                  "width": "1000",
-                  "height": "600",
-                  "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
-                  "plotLineColorFalling": "rgba(255, 74, 104, 1)",
-                  "gridLineColor": "rgba(233, 233, 234, 1)",
-                  "scaleFontColor": "rgba(214, 216, 224, 1)",
-                  "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
-                  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
-                  "symbolActiveColor": "rgba(242, 250, 254, 1)",
-                  "tabs": [
-                    {
-                      "title": "Indices",
-                      "symbols": [
-                        {
-                          "s": "INDEX:SPX",
-                          "d": "S&P 500"
-                        },
-                        {
-                          "s": "INDEX:IUXX",
-                          "d": "Nasdaq 100"
-                        },
-                        {
-                          "s": "INDEX:DOWI",
-                          "d": "Dow 30"
-                        },
-                        {
-                          "s": "INDEX:NKY",
-                          "d": "Nikkei 225"
-                        },
-                        {
-                          "s": "INDEX:DAX",
-                          "d": "DAX Index"
-                        },
-                        {
-                          "s": "OANDA:UK100GBP",
-                          "d": "FTSE 100"
-                        }
-                      ],
-                      "originalTitle": "Indices"
-                    },
-                    {
-                      "title": "Commodities",
-                      "symbols": [
-                        {
-                          "s": "CME_MINI:ES1!",
-                          "d": "E-Mini S&P"
-                        },
-                        {
-                          "s": "CME:E61!",
-                          "d": "Euro"
-                        },
-                        {
-                          "s": "COMEX:GC1!",
-                          "d": "Gold"
-                        },
-                        {
-                          "s": "NYMEX:CL1!",
-                          "d": "Crude Oil"
-                        },
-                        {
-                          "s": "NYMEX:NG1!",
-                          "d": "Natural Gas"
-                        },
-                        {
-                          "s": "CBOT:ZC1!",
-                          "d": "Corn"
-                        }
-                      ],
-                      "originalTitle": "Commodities"
-                    },
-                    {
-                      "title": "Bonds",
-                      "symbols": [
-                        {
-                          "s": "CME:GE1!",
-                          "d": "Eurodollar"
-                        },
-                        {
-                          "s": "CBOT:ZB1!",
-                          "d": "T-Bond"
-                        },
-                        {
-                          "s": "CBOT:UD1!",
-                          "d": "Ultra T-Bond"
-                        },
-                        {
-                          "s": "EUREX:GG1!",
-                          "d": "Euro Bund"
-                        },
-                        {
-                          "s": "EUREX:II1!",
-                          "d": "Euro BTP"
-                        },
-                        {
-                          "s": "EUREX:HR1!",
-                          "d": "Euro BOBL"
-                        }
-                      ],
-                      "originalTitle": "Bonds"
-                    },
-                    {
-                      "title": "Forex",
-                      "symbols": [
-                        {
-                          "s": "FX:EURUSD"
-                        },
-                        {
-                          "s": "FX:GBPUSD"
-                        },
-                        {
-                          "s": "FX:USDJPY"
-                        },
-                        {
-                          "s": "FX:USDCHF"
-                        },
-                        {
-                          "s": "FX:AUDUSD"
-                        },
-                        {
-                          "s": "FX:USDCAD"
-                        }
-                      ],
-                      "originalTitle": "Forex"
-                    }
-                  ]
-                }
-                  </script>
-                </div>
-                <!-- TradingView Widget END -->
-              </center>
-        </p>
-        <center>
-        <script src="https://www.macroaxis.com/widgets/url.jsp?t=56"></script>
-        </center>
+                    "width": "1000",
+                      "height": "600",
+                        "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+                          "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+                            "gridLineColor": "rgba(233, 233, 234, 1)",
+                              "scaleFontColor": "rgba(214, 216, 224, 1)",
+                                "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+                                  "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+                                    "symbolActiveColor": "rgba(242, 250, 254, 1)",
+                                      "tabs": [
+                                        {
+                                          "title": "Indices",
+                                          "symbols": [
+                                            {
+                                              "s": "INDEX:SPX",
+                                              "d": "S&P 500"
+                                            },
+                                            {
+                                              "s": "INDEX:IUXX",
+                                              "d": "Nasdaq 100"
+                                            },
+                                            {
+                                              "s": "INDEX:DOWI",
+                                              "d": "Dow 30"
+                                            },
+                                            {
+                                              "s": "INDEX:NKY",
+                                              "d": "Nikkei 225"
+                                            },
+                                            {
+                                              "s": "INDEX:DAX",
+                                              "d": "DAX Index"
+                                            },
+                                            {
+                                              "s": "OANDA:UK100GBP",
+                                              "d": "FTSE 100"
+                                            }
+                                          ],
+                                          "originalTitle": "Indices"
+                                        },
+                                        {
+                                          "title": "Commodities",
+                                          "symbols": [
+                                            {
+                                              "s": "CME_MINI:ES1!",
+                                              "d": "E-Mini S&P"
+                                            },
+                                            {
+                                              "s": "CME:E61!",
+                                              "d": "Euro"
+                                            },
+                                            {
+                                              "s": "COMEX:GC1!",
+                                              "d": "Gold"
+                                            },
+                                            {
+                                              "s": "NYMEX:CL1!",
+                                              "d": "Crude Oil"
+                                            },
+                                            {
+                                              "s": "NYMEX:NG1!",
+                                              "d": "Natural Gas"
+                                            },
+                                            {
+                                              "s": "CBOT:ZC1!",
+                                              "d": "Corn"
+                                            }
+                                          ],
+                                          "originalTitle": "Commodities"
+                                        },
+                                        {
+                                          "title": "Bonds",
+                                          "symbols": [
+                                            {
+                                              "s": "CME:GE1!",
+                                              "d": "Eurodollar"
+                                            },
+                                            {
+                                              "s": "CBOT:ZB1!",
+                                              "d": "T-Bond"
+                                            },
+                                            {
+                                              "s": "CBOT:UD1!",
+                                              "d": "Ultra T-Bond"
+                                            },
+                                            {
+                                              "s": "EUREX:GG1!",
+                                              "d": "Euro Bund"
+                                            },
+                                            {
+                                              "s": "EUREX:II1!",
+                                              "d": "Euro BTP"
+                                            },
+                                            {
+                                              "s": "EUREX:HR1!",
+                                              "d": "Euro BOBL"
+                                            }
+                                          ],
+                                          "originalTitle": "Bonds"
+                                        },
+                                        {
+                                          "title": "Forex",
+                                          "symbols": [
+                                            {
+                                              "s": "FX:EURUSD"
+                                            },
+                                            {
+                                              "s": "FX:GBPUSD"
+                                            },
+                                            {
+                                              "s": "FX:USDJPY"
+                                            },
+                                            {
+                                              "s": "FX:USDCHF"
+                                            },
+                                            {
+                                              "s": "FX:AUDUSD"
+                                            },
+                                            {
+                                              "s": "FX:USDCAD"
+                                            }
+                                          ],
+                                          "originalTitle": "Forex"
+                                        }
+                                      ]
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </center>
+  </p>
+  <center>
+    <script src="https://www.macroaxis.com/widgets/url.jsp?t=56"></script>
+  </center>
 
-<hr noshade color=white width=500 size=1>
-<center><font size="1">Created by <a href="jinc.html">Jin C.</a> <b>|</b> <a href="disclaimer.html">Disclaimer</a></font></center>
-<center><div class=news><font size="1"><b>&copy; 2019 SqrtVar. All Rights Reserved.</b></font></div>
-<br>
-
+  <hr noshade color=white width=500 size=1>
+  <center>
+    <font size="1">Created by <a href="jinc.html">Jin C.</a> <b>|</b> <a href="disclaimer.html">Disclaimer</a></font>
+  </center>
+  <center>
+    <div class=news>
+      <font size="1"><b>&copy; 2019 SqrtVar. All Rights Reserved.</b></font>
     </div>
+    <br>
+
+</div>
 
 </html>
