@@ -1,0 +1,35 @@
+body {
+    background-image: url("lemon.jpg");
+}
+
+div {
+    border-style: line;
+}
+
+.news {
+    background-image: url("background.jpg");
+}
+
+.boardheader {
+    background-image: url("background.jpg");
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+}
+
+.footer {
+    < !–– position: fixed;
+    -->left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #9b9b9b;
+    color: white;
+    text-align: center;
+}

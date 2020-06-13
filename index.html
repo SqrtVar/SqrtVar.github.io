@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <link rel="stylesheet" type="text/css" href="elementdefinitions.css">
   <style>
     a:link {
       font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -91,7 +92,7 @@
                 <!-- start left table code -->
                 <table bgcolor="#000000" width="140" cellspacing="0" cellpadding="0" border="0">
                   <td>
-                    <table width="100%" cellspacing="1" cellpadding="0" border="0">
+                    <table align="left" width="100%" cellspacing="1" cellpadding="0" border="0">
                       <tr>
                         <td bgcolor="#CCCCCC">
                           <font face=arial size=2 color="D77D00"><b>
@@ -116,8 +117,17 @@
                       <tr>
                         <td bgcolor="#CCCCCC">
                           <font face=arial size=2 color="D77D00"><b>
-                              <center>Catalysts</center>
+                              <center>Cloud & NLP</center>
                             </b></font>
+                      </tr>
+                      <tr>
+                        <td bgcolor=#9b9b9b onmouseover="this.style.backgroundColor='#b0b0b0';"
+                          onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
+                          <p style="width:140" align=center>
+                            <center>
+                              <p><a title="" href="https://azure.microsoft.com/" target="_blank">Azure</a></p>
+                              <p><a title="" href="https://aws.amazon.com/" target="_blank">AWS</a></p>
+                            </center>
                         </td>
                       </tr>
                       <tr>
@@ -137,14 +147,15 @@
         </td>
         <td valign="top">
           <!-- start news section -->
-          <div class=news>
-            <center><u><small><b>Monitors</u></small></b></center><BR>
-            <table bgcolor="#9b9b9b" width="575" cellspacing="0" cellpadding="7" border="0">
+          <div class=boardheader>
+            <center><u><small><b>UPDATES</u></small></b></center><br>
+            <table class="news" bgcolor="#9b9b9b" width="575" height="600" cellspacing="0" cellpadding="7" border="0">
               <tr>
                 <td>
                   <center>
                     <font size="2">
-                      <P>This web site is under construction.</p>
+                      <P>Sorry, I've been busy with projects. NLP and research updates are no longer updated at the
+                        moment.</p>
                     </font>
                     </tdcenter> <br>
                 </td>
@@ -171,7 +182,7 @@
                       onmouseout="this.style.backgroundColor='#9b9b9b';" background="">
                       <center>
                         <script> //Encrypted Password script function submitentry() { password = document.password1.password2.value.toLowerCase() username = document.password1.username2.value.toLowerCase() passcode = 1 usercode = 1 for (i = 0; i < password.length; i++) { passcode *= password.charCodeAt(i); } for (x = 0; x < username.length; x++) { usercode *= username.charCodeAt(x); } //CHANGE THE NUMBERS BELOW TO REFLECT YOUR USERNAME/PASSWORD if (usercode == 48489904524600 && passcode == 1.3326737635318771e+27) //CHANGE THE NUMBERS ABOVE TO REFLECT YOUR USERNAME/PASSWORD { window.location = password + "jprivate.html" } else { alert("password/username combination wrong") } } </script>
-                        <form name="password1"> &nbsp;<small>User's ID: </small> <input type="text" name="username2"
+                        <form name="password1"> &nbsp;<small>Username: </small> <input type="text" name="username2"
                             size="15"> <br> &nbsp;<small>Password: </small> <input type="password" name="password2"
                             size="15"><BR> <input type="button" value="Login" onClick="submitentry()"> </form>
                         <div>&nbsp;</div>
@@ -191,7 +202,7 @@
       <p style="width:140" align=center>
         <center>
           <p><a title="" href="https://finviz.com" target="_blank">finviz</a></p>
-          <p><a title="" href="https://zerohedge.com" target="_blank">zerohedge</a></p>
+          <p><a title="" href="https://www.kaggle.com" target="_blank">kaggle</a></p>
           <p><a title="" href="https://www.quantopian.com" target="_blank">quantopian</a></p>
           <p><a title="" href="https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html"
               target="_blank">cboe hike prop%</a></p>
@@ -214,17 +225,7 @@
   <p>
     </center>
 </body> <!-- Start of Footer -->
-<style>
-  .footer {
-    < !–– position: fixed;
-    -->left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #b0b0b0;
-    color: white;
-    text-align: center;
-  }
-</style>
+<style> </style>
 <div class="footer"> <br>
   <p>
     <center>
@@ -251,12 +252,11 @@
   <center>
     <script src="https://www.macroaxis.com/widgets/url.jsp?t=56"></script>
   </center>
-  <hr noshade color=white width=500 size=1>
   <center>
     <font size="1">Created by <a href="jinc.html">Jin C.</a> <b>|</b> <a href="disclaimer.html">Disclaimer</a></font>
   </center>
   <center>
-    <div class=news>
+    <div>
       <font size="1"><b>&copy; 2020 SqrtVar. All Rights Reserved.</b></font>
     </div> <br>
 </div>
