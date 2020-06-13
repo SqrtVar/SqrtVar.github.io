@@ -1,5 +1,5 @@
 body {
-    background-image: url("lemon.jpg");
+    background-color: #fddb0091;
 }
 
 div {
@@ -29,7 +29,7 @@ div {
     -->left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #9b9b9b;
+    background-color: #ffdd00;
     color: white;
     text-align: center;
 }
